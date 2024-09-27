@@ -3,7 +3,7 @@
 <footer class="tw-text-white text-base" style="background-color: #171717;">
 	<div class="tw-max-w-screen-xl tw-mx-auto tw-px-4 tw-py-12 xl:tw-py-16">
 		<div class="tw-flex tw-flex-wrap tw-items-center tw-justify-center tw-py-5">
-			<div class="tw-py-2 tw-strink-0 tw-max-w-[260px] tw-order-1 md:tw-order-3 xl:tw-order-1">
+			<div class="tw-py-2 tw-strink-0 tw-max-w-[240px] tw-order-1 md:tw-order-3 xl:tw-order-1">
 				<a href="#">
 					<img src="https://inlem.org/wp-content/uploads/2017/07/american-inflag.jpg"
 						class="tw-w-full tw-h-auto object-contain" alt="American Flag" />
@@ -51,7 +51,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="tw-py-2 tw-strink-0 tw-max-w-[260px] tw-order-3">
+			<div class="tw-py-2 tw-strink-0 tw-max-w-[240px] tw-order-3">
 				<a href="#">
 					<img src="https://inlem.org/wp-content/uploads/2023/03/INLEM3dwhite.png" alt="INLEM Logo"
 						class="tw-w-full tw-h-auto object-contain" />
