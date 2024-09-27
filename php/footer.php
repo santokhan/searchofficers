@@ -11,7 +11,7 @@
 			</div>
 			<div class="tw-py-2 tw-flex-grow tw-w-full lg:tw-w-2/4 tw-px-4 lg:tw-px-5 tw-order-2 md:tw-order-1 lg:tw-order-2">
 				<div>
-					<p class="tw-text-xl tw-font-bold tw-italic tw-text-white tw-text-center">
+					<p class="tw-text-base tw-font-bold tw-italic tw-text-white tw-text-center">
 						DEDICATED TO HONORING ALL OF OUR STATE'S FALLEN OFFICERS
 					</p>
 					<p class="tw-text-white tw-mt-4 tw-text-center">

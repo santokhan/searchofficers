@@ -15,6 +15,7 @@ include 'header.php';
     margin: 0;
     padding: 0;
     width: 190px;
+    width: 100%;
   }
 
   #country-list li {
@@ -32,15 +33,14 @@ include 'header.php';
 <script type="text/javascript">
   function getAgency(v) {
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
+    xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         if (this.responseText != '') {
           $("#suggesstion-box").show();
           // $("#suggesstion-box").html(data);
           document.getElementById("suggesstion-box").innerHTML = this.responseText;
           $("#tagname").css("background", "#FFF");
-        }
-        else {
+        } else {
           $("#suggesstion-box").hide();
         }
       }
@@ -48,12 +48,14 @@ include 'header.php';
     xhttp.open("GET", "get-agency.php?v=" + v, true);
     xhttp.send();
   }
+
   function selectcountry(val) {
     tval = val.replace(/`/g, "''");
     $("#tagname").val(val);
     $("#agname").val(tval);
     $("#suggesstion-box").hide();
   }
+
   function setlname(str) {
     str = str.replace(/'/g, "''");
     document.getElementById("lname").value = str;
@@ -79,7 +81,7 @@ include 'header.php';
       <form action="search-officer.php" method="post"
         class="tw-grid tw-grid-cols-2 lg:tw-grid-cols-4 tw-flex-wrap tw-gap-4 tw-items-center">
         <label class="tw-flex-grow tw-flex tw-flex-col tw-gap-1">
-          First Name
+          Last Name
           <input type="text" name="tlname" id="tlname"
             class="tw-w-full tw-border tw-border-gray-300 tw-px-4 tw-h-10 tw-rounded-lg tw-font-normal tw-text-base"
             onkeyup="setlname(this.value)">
@@ -110,7 +112,7 @@ include 'header.php';
           </select>
         </label>
         <label class="tw-flex-grow tw-flex tw-flex-col tw-gap-1">
-          Country
+          County
           <input type="text" name="county" id="county"
             class="tw-w-full tw-border tw-border-gray-300 tw-px-4 tw-h-10 tw-rounded-lg tw-font-normal tw-text-base">
         </label>
@@ -126,12 +128,6 @@ include 'header.php';
             }
             ?>
           </select>
-        </label>
-        <label class="tw-flex-grow tw-flex tw-flex-col tw-gap-2 relative">
-          Tag Name
-          <input type="text" name="tagname" id="tagname"
-            class="tw-w-full tw-border tw-border-gray-300 tw-px-4 tw-h-10 tw-rounded-lg tw-font-normal tw-text-base relative"
-            onkeyup="getAgency(this.value)">
         </label>
         <label class="tw-flex-grow tw-flex tw-flex-col tw-gap-1 tw-col-span-2">
           Age
@@ -163,6 +159,13 @@ include 'header.php';
               class="tw-w-full tw-border tw-border-gray-300 tw-px-4 tw-h-10 tw-rounded-lg tw-font-normal tw-text-base">
           </div>
         </label>
+        <label class="tw-flex-grow tw-flex tw-flex-col tw-gap-2 tw-relative">
+          Agency Name
+          <input type="text" name="agname" id="agname"
+            class="tw-w-full tw-border tw-border-gray-300 tw-px-4 tw-h-10 tw-rounded-lg tw-font-normal tw-text-base relative"
+            onkeyup="getAgency(this.value)">
+          <div id="suggesstion-box" class="tw-absolute tw-w-full tw-z-[5]" style="display:none;height:220px;overflow-y:auto;top:100%;left:0;"></div>
+        </label>
         <label class="tw-flex-grow tw-flex tw-flex-col tw-gap-1">
           Agency Type
           <select
@@ -177,13 +180,13 @@ include 'header.php';
           </select>
         </label>
         <div class="tw-w-full tw-col-span-full">
-          <input type="submit" name="search" value="Search" class="btn-main">
+          <input type="submit" name="search" value="Search" class="tw-text-base btn-main">
         </div>
       </form>
       <label class="tw-flex tw-justify-center">
         <a target="_blank" href="https://drive.google.com/file/d/1aCe6YnRlDccDmXZPnyG0bQluR3bteTA_/view?usp=sharing"
           class="pdf">
-          <span>Indiana Counties Map</span>
+          <span class="tw-text-base tw-px-3">Indiana Counties Map</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_25_177)">
               <path
@@ -213,11 +216,18 @@ include 'header.php';
   </div>
   <?php include 'footer.php'; ?>
   <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
         (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-89052607-2', 'auto'); ga('send', 'pageview');
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-89052607-2', 'auto');
+    ga('send', 'pageview');
   </script>
 </body>
 
