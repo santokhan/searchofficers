@@ -1,15 +1,15 @@
 ﻿</div>
 
 <footer class="tw-text-white text-base" style="background-color: #171717;">
-	<div class="tw-max-w-screen-xl tw-mx-auto tw-px-4 tw-py-12 lg:tw-py-16">
+	<div class="tw-max-w-screen-xl tw-mx-auto tw-px-4 tw-py-12 xl:tw-py-16">
 		<div class="tw-flex tw-flex-wrap tw-items-center tw-justify-center tw-py-5">
-			<div class="tw-py-2 tw-strink-0 tw-max-w-[260px] tw-order-1 md:tw-order-3 lg:tw-order-1">
+			<div class="tw-py-2 tw-strink-0 tw-max-w-[260px] tw-order-1 md:tw-order-3 xl:tw-order-1">
 				<a href="#">
 					<img src="https://inlem.org/wp-content/uploads/2017/07/american-inflag.jpg"
 						class="tw-w-full tw-h-auto object-contain" alt="American Flag" />
 				</a>
 			</div>
-			<div class="tw-py-2 tw-flex-grow tw-w-full lg:tw-w-2/4 tw-px-4 lg:tw-px-5 tw-order-2 md:tw-order-1 lg:tw-order-2">
+			<div class="tw-py-2 tw-flex-grow tw-w-full xl:tw-w-2/4 tw-px-4 xl:tw-px-5 tw-order-2 md:tw-order-1 xl:tw-order-2">
 				<div>
 					<p class="tw-text-base tw-font-bold tw-italic tw-text-white tw-text-center">
 						DEDICATED TO HONORING ALL OF OUR STATE'S FALLEN OFFICERS
@@ -31,7 +31,7 @@
 						<img src="https://inlem.org/wp-content/uploads/2023/03/dmca_protected_3_120.png"
 							alt="DMCA Protection" class="tw-w-auto tw-h-12" />
 					</a>
-					<div class="tw-flex tw-items-center tw-gap-5 tw-px-2 lg:tw-px-6">
+					<div class="tw-flex tw-items-center tw-gap-5 tw-px-2 xl:tw-px-6">
 						<a href="https://www.facebook.com/INLEM/" target="_blank" rel="noopener noreferrer"
 							class="tw-text-gray-400 hover:tw-text-white tw-transition-colors">
 							<i class="fa-brands fa-square-facebook" style="font-size:28px !important;"></i>
